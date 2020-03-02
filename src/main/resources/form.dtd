@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!--
+
+               Copyright 2009-2017 the original author or authors.
+
+               Licensed under the Apache License, Version 2.0 (the "License");
+               you may not use this file except in compliance with the License.
+               You may obtain a copy of the License at
+
+                  http://www.apache.org/licenses/LICENSE-2.0
+
+               Unless required by applicable law or agreed to in writing, software
+               distributed under the License is distributed on an "AS IS" BASIS,
+               WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+               See the License for the specific language governing permissions and
+               limitations under the License.
+
+        -->
+        <!ELEMENT form (id,title,action,filter*,column+,list*,sql*,doc*) >
+        <!ATTLIST form
+                multiselect (true|false) #IMPLIED
+                pageable (true|false) #IMPLIED
+                groupKey CDATA #IMPLIED
+                >
+
+        <!ELEMENT id (#PCDATA)*>
+
+        <!ELEMENT title (#PCDATA)*>
+
+        <!ELEMENT filter (option|trigger)*>
+        <!ATTLIST filter
+                id ID #REQUIRED
+                key CDATA #REQUIRED
+                label CDATA #REQUIRED
+                type CDATA #REQUIRED
+                default-value CDATA #IMPLIED
+                multiselect (true|false) #IMPLIED
+                required (true|false) #IMPLIED
+                hidden (true|false) #IMPLIED
+                data-ref IDREF #IMPLIED
+                data CDATA #IMPLIED
+                >
+
+        <!ELEMENT column (option|column)*>
+
+        <!ATTLIST column
+                property CDATA #REQUIRED
+                name CDATA #REQUIRED
+                hidden (true|false) #IMPLIED
+                type CDATA #IMPLIED
+                width CDATA #IMPLIED
+                sortable (true|false) #IMPLIED
+                sortable-ref CDATA #IMPLIED
+                sort-order (descend|ascend) #IMPLIED
+                >
+
+        <!ELEMENT option (#PCDATA)*>
+
+        <!ATTLIST option
+                key CDATA #REQUIRED
+                >
+
+        <!ELEMENT trigger EMPTY>
+        <!ATTLIST trigger
+                filter-ref IDREF #REQUIRED
+                fix-value CDATA #IMPLIED
+                >
+
+        <!ELEMENT list (item)*>
+
+        <!ATTLIST list id ID #REQUIRED>
+
+        <!ELEMENT sql ANY>
+
+        <!ATTLIST sql id ID #REQUIRED
+                dataSource CDATA #IMPLIED
+                >
+
+
+        <!ELEMENT action (method)>
+
+        <!ELEMENT method (method-param)*>
+        <!ATTLIST method
+                class CDATA #REQUIRED
+                name CDATA #REQUIRED
+                >
+
+        <!ELEMENT method-param EMPTY>
+        <!ATTLIST method-param
+                name CDATA #REQUIRED
+                value CDATA #REQUIRED
+                >
+
+
+        <!ELEMENT doc (doc-mapper)*>
+        <!ATTLIST doc
+                id CDATA #REQUIRED
+                >
+
+
+        <!ELEMENT doc-mapper EMPTY>
+        <!ATTLIST doc-mapper
+                id CDATA #REQUIRED
+                property CDATA #REQUIRED
+                >
+
+
+        <!ELEMENT item EMPTY>
+
+        <!ATTLIST item
+                key CDATA #REQUIRED
+                value CDATA #REQUIRED
+                >
+
+
+
+
+

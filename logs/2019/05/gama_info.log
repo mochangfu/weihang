@@ -1,0 +1,40 @@
+2019-06-08 17:07:33 [ INFO ] [ com.hg.gama.GamaApplication ] Starting GamaApplication on DESKTOP-QBDV7NT with PID 16116 (G:\gama1\gama\out\production\classes started by 25414 in G:\gama1\gama)
+2019-06-08 17:07:33 [ INFO ] [ com.hg.gama.GamaApplication ] No active profile set, falling back to default profiles: default
+2019-06-08 17:07:35 [ INFO ] [ org.springframework.data.repository.config.RepositoryConfigurationDelegate ] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-08 17:07:35 [ INFO ] [ org.springframework.data.repository.config.RepositoryConfigurationDelegate ] Finished Spring Data repository scanning in 101ms. Found 10 repository interfaces.
+2019-06-08 17:07:35 [ INFO ] [ org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker ] Bean 'methodValidationConfig' of type [com.hg.gama.boot.config.MethodValidationConfig$$EnhancerBySpringCGLIB$$edd59398] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-08 17:07:35 [ INFO ] [ org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker ] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fec39ce8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-08 17:07:35 [ INFO ] [ org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping ] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-06-08 17:07:35 [ INFO ] [ org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker ] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5a2bd7e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-08 17:07:36 [ INFO ] [ org.springframework.boot.web.embedded.tomcat.TomcatWebServer ] Tomcat initialized with port(s): 8080 (http)
+2019-06-08 17:07:36 [ INFO ] [ org.apache.coyote.http11.Http11NioProtocol ] Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-08 17:07:36 [ INFO ] [ org.apache.catalina.core.StandardService ] Starting service [Tomcat]
+2019-06-08 17:07:36 [ INFO ] [ org.apache.catalina.core.StandardEngine ] Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-08 17:07:36 [ INFO ] [ org.apache.catalina.core.AprLifecycleListener ] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\oracle\product\11.1.0\db_3\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jdk1.8.0_144\jre\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\apache-maven-3.5.4\bin;C:\VisualSVNServer\bin;C:\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\gradle\gradle-5.1.1\bin;C:\Users\25414\AppData\Local\Microsoft\WindowsApps;;.]
+2019-06-08 17:07:36 [ INFO ] [ org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/gama] ] Initializing Spring embedded WebApplicationContext
+2019-06-08 17:07:36 [ INFO ] [ org.springframework.web.context.ContextLoader ] Root WebApplicationContext: initialization completed in 2293 ms
+2019-06-08 17:07:36 [ INFO ] [ com.zaxxer.hikari.HikariDataSource ] datasource - Starting...
+2019-06-08 17:07:36 [ INFO ] [ com.zaxxer.hikari.HikariDataSource ] datasource - Start completed.
+2019-06-08 17:07:36 [ INFO ] [ org.hibernate.jpa.internal.util.LogHelper ] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-06-08 17:07:37 [ INFO ] [ org.hibernate.Version ] HHH000412: Hibernate Core {5.3.7.Final}
+2019-06-08 17:07:37 [ INFO ] [ org.hibernate.cfg.Environment ] HHH000206: hibernate.properties not found
+2019-06-08 17:07:37 [ INFO ] [ org.hibernate.annotations.common.Version ] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-08 17:07:37 [ INFO ] [ org.hibernate.dialect.Dialect ] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-08 17:07:40 [ INFO ] [ org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-08 17:07:41 [ INFO ] [ springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping ] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-06-08 17:07:41 [ INFO ] [ org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor ] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-08 17:07:42 [ INFO ] [ springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper ] Context refreshed
+2019-06-08 17:07:42 [ INFO ] [ springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper ] Found 1 custom documentation plugin(s)
+2019-06-08 17:07:42 [ INFO ] [ springfox.documentation.spring.web.scanners.ApiListingReferenceScanner ] Scanning for api listing references
+2019-06-08 17:07:42 [ INFO ] [ org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler ] Initializing ExecutorService
+2019-06-08 17:07:42 [ INFO ] [ org.apache.coyote.http11.Http11NioProtocol ] Starting ProtocolHandler ["http-nio-8080"]
+2019-06-08 17:07:42 [ INFO ] [ org.springframework.boot.web.embedded.tomcat.TomcatWebServer ] Tomcat started on port(s): 8080 (http) with context path '/gama'
+2019-06-08 17:07:42 [ INFO ] [ com.hg.gama.GamaApplication ] Started GamaApplication in 9.34 seconds (JVM running for 11.031)
+2019-06-08 17:08:34 [ INFO ] [ org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/gama] ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-08 17:08:34 [ INFO ] [ org.springframework.web.servlet.DispatcherServlet ] Initializing Servlet 'dispatcherServlet'
+2019-06-08 17:08:34 [ INFO ] [ org.springframework.web.servlet.DispatcherServlet ] Completed initialization in 12 ms
+2019-06-08 17:08:34 [ INFO ] [ com.hg.gama.gamaauth.controller.WebController ] web端账户登录
+2019-06-08 17:08:34 [ INFO ] [ org.hibernate.hql.internal.QueryTranslatorFactoryInitiator ] HHH000397: Using ASTQueryTranslatorFactory
+2019-06-08 17:08:35 [ INFO ] [ com.hg.gama.gamaauth.controller.WebController ] 登录成功：mcf:0:0:0:0:0:0:0:1
